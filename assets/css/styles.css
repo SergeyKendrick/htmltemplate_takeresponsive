@@ -86,6 +86,7 @@ img.header-phone {
     width: 100%;
     max-height: 800px;
     height: 100%;
+    transition: .5s;
 }
 
 section.start {
@@ -268,16 +269,14 @@ section.plans {
 }
 
 section.plans > .container > div {
-    margin-left: 50px;
     padding: 20px;
     box-sizing: border-box;
     width: 37%;
     min-width: 400px;
     float: left;
-
-    margin-right: 50px;
     text-align: left;
     transition: .4s;
+    margin-right: 40px;
 }
 
 section.plans > .container > div > span {
@@ -361,7 +360,6 @@ footer h4 {
 
 footer > .container > .footer-info {
     width: 50%;
-    margin-right: 70px;
 }
 
 footer > .container > .footer-info p {
@@ -394,7 +392,7 @@ form.control > input[type="text"] {
     position: absolute;
     left: 0;
     height: 52px;
-    width: 80%;
+    width: 90%;
     max-width: 380px;
     font-size: 30px;
     color: #777;
@@ -557,16 +555,13 @@ form.control > input[type="image"] {
 }
 
 @media screen and (max-width: 500px) { 
-    img.header-phone {
-        display: block;
-        position: absolute;
-        left: 30%;
-        bottom: 0;
-        z-index: 4;
-        max-width: 140px;
-        width: 100%;
-        max-height: 200px;
+    
+    header {
         height: 100%;
+        max-height: 350px;
+    }
+    img.header-phone {
+        display: none;
     }
     
     section.start > .container > p {
